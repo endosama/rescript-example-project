@@ -1,21 +1,16 @@
 # ReScript Project Template
 
-The only official ReScript starter template.
+When `namespace: true` opening a module works from an exotic filename.
+
+When `namespace: false` the same open throws an error `The module or file Demo can't be found.`.
 
 ## Installation
 
 ```sh
-npm install
+yarn
 ```
 
 ## Build
 
-- Build: `npm run build`
-- Clean: `npm run clean`
-- Build & watch: `npm run start`
-
-## Run
-
-```sh
-node src/Demo.bs.js
-```
+- Build with namespace: `yarn re:build:namespace`
+- Build with namespace: `yarn re:build:no-namespace`
