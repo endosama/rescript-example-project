@@ -1,0 +1,19 @@
+{
+  "name": "exotic-without-namespace",
+  "version": "0.0.1",
+  "scripts": {
+    "re:build": "rescript build -with-deps",
+    "re:clean": "rescript clean"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "*"
+  },
+  "dependencies": {
+    "rescript": "^10.1.4"
+  }
+}

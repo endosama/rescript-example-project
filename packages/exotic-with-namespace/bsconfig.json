@@ -1,6 +1,7 @@
 {
-  "name": "rescript-project-template",
+  "name": "exotic-with-namespace",
   "version": "0.0.1",
+  "namespace": true,
   "sources": {
     "dir" : "src",
     "subdirs" : true

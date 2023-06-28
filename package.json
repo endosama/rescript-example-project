@@ -1,10 +1,16 @@
 {
   "name": "rescript-project-template",
   "version": "0.0.1",
+  "workspaces": {
+    "packages": [
+      "packages/exotic-with-namespace",
+      "packages/exotic-without-namespace"
+    ]
+  },
   "scripts": {
-    "build": "bsb -make-world",
-    "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w"
+    "re:build:namespace": "cd packages/exotic-with-namespace/ && yarn re:build",
+    "re:build:no-namespace": "cd packages/exotic-without-namespace/ && yarn re:build",
+    "re:clean": "rescript clean"
   },
   "keywords": [
     "rescript"
@@ -13,5 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "*"
+  },
+  "dependencies": {
+    "rescript": "^10.1.4"
   }
 }
