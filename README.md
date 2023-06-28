@@ -1,4 +1,4 @@
-# ReScript Project Template
+# Module not found outside of namespace
 
 When `namespace: true` opening a module works from an exotic filename.
 
